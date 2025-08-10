@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    background: #2c3e50;
+    padding-top: 20px;
+    transition: width 0.3s;
+}
+
+.sidebar:hover {
+    width: 270px;
+}
+
+.sidebar center {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sidebar .profile_image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #1abc9c;
+}
+
+.sidebar h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    border-left: 4px solid transparent;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar a:hover, 
+.sidebar a.active {
+    background: #1abc9c;
+    font-weight: bold;
+    border-left: 4px solid white;
+}
+
+/* Header */
+header {
+    background: #34495e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.left_area h3 {
+    font-size: 24px;
+    color: #1abc9c;
+}
+
+.logout_btn {
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.logout_btn:hover {
+    background: #c0392b;
+}
+
+/* Main Content */
+.content {
+    margin-left: 280px;
+    padding: 30px;
+    transition: margin-left 0.3s;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Forms & Buttons */
+.form-container {
+    background: white;
+    max-width: 500px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fafafa;
+}
+
+.form-container button {
+    padding: 12px 20px;
+    background: #19B3D3;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-container button:hover {
+    background: #0B87A6;
+}
